@@ -1,0 +1,74 @@
+html {
+  height: 100%;
+}
+
+span,
+p,
+div,
+td,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  cursor: default;
+}
+
+a span {
+  cursor: pointer;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0;
+  padding: 0 0 180px;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+
+footer {
+  width: 100%;
+  padding: 30px 0 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+}
+
+footer > div.container:first-child > hr:first-child {
+  float: left;
+  width: 50%;
+  border-width: 1px 0 0;
+}
+
+footer p.debug {
+  margin-top: 1em;
+}
+
+div.pre {
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+table.table th {
+  text-align: center;
+}
+
+table.table td.number {
+  text-align: right;
+}
+
+table.table td.datetime {
+  width: 180px;
+  text-align: center;
+}
+
+div.date span {
+  cursor: pointer;
+}
