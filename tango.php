@@ -1,5 +1,7 @@
 <?php
 require __DIR__.'/vendor/autoload.php';
+require __DIR__.'/lib/util.func.php';
+require __DIR__.'/lib/riak/riak.php';
 
 header('Server: Tango');
 
@@ -11,6 +13,7 @@ Config::setFile('tango', __DIR__.'/config/tango.php');
 Config::setFile('html',  __DIR__.'/config/html.php');
 Config::setFile('als',   __DIR__.'/config/als.php');
 Config::setFile('log',   __DIR__.'/config/log.php');
+Config::setFile('riak',  __DIR__.'/config/riak.php');
 
 TangoException::register();
 
